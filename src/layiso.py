@@ -16,8 +16,9 @@ def plugin_main(img, drawable):
         else:
             layer.visible = False
 
+# Placed in Layer context menu
 register(
-        "python_fu_layiso",
+        "python_layiso2",
         "Isolate this layer",
         "Hide all layers except the active one.",
         "Jan Singon Slany",
@@ -32,5 +33,23 @@ register(
         [],
         plugin_main,
         "<Layers>")
+
+# Placed in main Layer menu
+register(
+        "python_layiso",
+        "Isolate this layer",
+        "Hide all layers except the active one.",
+        "Jan Singon Slany",
+        "Jan Singon Slany",
+        "2016",
+        "Isolate Layer",
+        "RGB*, GRAY*",
+        [
+            (PF_IMAGE, "image", "Input image", None),
+            (PF_DRAWABLE, "drawable", "Input drawable", None)
+        ],
+        [],
+        plugin_main,
+        "<Image>/Layer")
 
 main()
