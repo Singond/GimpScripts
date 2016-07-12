@@ -31,6 +31,6 @@ register(
         ],
         [],
         plugin_main,
-        "<Image>/Layer")
+        "<Layers>")
 
 main()
