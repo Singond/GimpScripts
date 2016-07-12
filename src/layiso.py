@@ -18,15 +18,19 @@ def plugin_main(img, drawable):
 
 register(
         "python_fu_layiso",
-        "Isolate the active layer",
+        "Isolate this layer",
         "Hide all layers except the active one.",
         "Jan Singon Slany",
         "Jan Singon Slany",
         "2016",
-        "<Image>/Layer/Isolate Layer",
+        "Isolate Layer",
         "RGB*, GRAY*",
+        [
+            (PF_IMAGE, "image", "Input image", None),
+            (PF_DRAWABLE, "drawable", "Input drawable", None)
+        ],
         [],
-        [],
-        plugin_main)
+        plugin_main,
+        "<Image>/Layer")
 
 main()

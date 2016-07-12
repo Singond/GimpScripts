@@ -2,3 +2,9 @@ Scheme scripts go to <gimp-custom>/scripts
 while python scripts go to <gimp-custom>/plug-ins,
 where <gimp-custom> is <home>/.gimp-2.x for installation
 or <gimp-portable-dir>/portable for Parhta's portable version.
+
+Scripts placed in Python-Fu (Using the <code>menu</code> parameter of register(),
+not the <code>label</code> argument! Specifying menu path in <code>label</code>
+does imitate menu placement, but only in the GUI.) should not have the two implicit
+arguments (image, drawable) declared in register(). Scripts placed elsewhere should,
+though.
