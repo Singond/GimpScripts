@@ -1,0 +1,4 @@
+Scheme scripts go to <gimp-custom>/scripts
+while python scripts go to <gimp-custom>/plug-ins,
+where <gimp-custom> is <home>/.gimp-2.x for installation
+or <gimp-portable-dir>/portable for Parhta's portable version.
