@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# 
+# Creates duplicates of the active layer, each scaled to a standard icon size.
 
 from gimpfu import *
 
@@ -23,7 +23,7 @@ def layer(size, original, image):
 register(
         "python_fu_makeicolayers",
         "Create layers for an .ico file",
-        "Creates duplicated of the active layer, each scaled to a standard icon size",
+        "Creates duplicates of the active layer, each scaled to a standard icon size",
         "Jan Singon Slany",
         "Jan Singon Slany",
         "2016",

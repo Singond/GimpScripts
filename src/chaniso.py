@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
 #
-# Creates a new image with duplicates of what is visible in the current image,
-# each scaled to a standard icon size.
+# Hides all custom channels except the active one.
 #
 
 from gimpfu import *

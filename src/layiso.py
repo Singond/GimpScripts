@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
 #
-# Creates a new image with duplicates of what is visible in the current image,
-# each scaled to a standard icon size.
+# Isolates the selected layer, ie. displays it and hides the rest.
 #
 
 from gimpfu import *
